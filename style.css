@@ -1,0 +1,192 @@
+﻿/* landing page */ 
+    body {
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        background: linear-gradient(to bottom, #fdf5e9 0%, #fdf5e9 100%);
+        background-size: cover;
+    }
+
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/maskImage.jpeg');
+    height: 100vh;
+    width: 100vW;
+    background-size: cover;
+    //padding-top: 20%;
+    //padding-bottom: 2%;
+    z-index: 1;
+}
+
+.myLogo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15vh;
+    z-index: 2;
+}
+
+.myText {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* grocery and pharmacy pills */ 
+    .nav-pills a {
+        color: black;
+    }
+
+    .nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+        color: black;
+        background-color: #e26a6b;
+    }
+
+    .nav-pills > li.active > a:hover {
+        color: white;
+        background-color: #e26a6b;
+    }
+
+    .nav-pills > li > a:hover {
+        color: white;
+        background-color: #eeaaab;
+    }
+
+/* about us and contact us tabs */ 
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+        border-bottom: none !important;
+        border: 0 !important;
+        background-color: #fbedd7;
+    }
+
+    .nav-tabs > li.active > a:hover {
+        border-bottom: none !important;
+        border: 0 !important;
+        color: white;
+        background-color: #fbedd7;
+    }
+
+    .nav-tabs a {
+        border-bottom: none !important;
+        border: 0 !important;
+        color: black;
+    }
+
+    .nav-tabs > li > a:hover {
+        border-bottom: none !important;
+        border: 0 !important;
+        color: white;
+        background-color: #fbedd7;
+    }
+
+/* footer */ 
+    #myFooter {
+        background-color: #f9e0bb;
+        padding-top: 1%;
+        padding-bottom: 0.5%;
+        width: 100%;
+        color: black;
+        text-align: center;
+    }
+
+/* modal */
+    .modal-body {
+        width: 95%;
+        height: 95%;
+        padding-left: 19px !important;
+        margin: auto;
+    }
+
+    .modal-header {
+        background: #fbebd2;
+        border-radius: 8%;
+        border-bottom: none !important;
+    }
+
+    .modal-content {
+        background: #fdf5e9;
+    }
+
+    #storeImage {
+        padding: 3px;
+        border-radius: 8%;
+    }
+
+/* stores and pharmacy "buttons" */
+    #stores, #pharmacies {
+        border: 6px solid #f9e0bb;
+        border-radius: 8px;
+        background-color:#fbebd2;
+    }
+
+    #stores:hover {
+        background-color: #fbe8cd;
+
+    }
+
+    .btn.btn-block:hover {
+        background: #f9e0bb !important;
+    }
+
+
+    #stores, #pharmacies > p {
+        color: black;
+        padding: 15px 15px 15px 15px
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    #stores, #pharmacies > p {
+        color: black;
+        margin: 1px;
+        font-size: 20px;
+    }
+
+/* about us page */
+    .headshots {
+        background: #e26a6b;
+        padding: 3px;
+        border-radius: 4px;
+    }
+
+    #aboutUsSection {
+        background: #fbedd7;
+    }
+
+
+/* search bar */
+    #searchBar {
+        width: 100%;
+        height: 32px;
+        border-radius: 6px;
+        border: 1px solid #e26a6b;
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+
+    #searchWrapper {
+        position: relative;
+    }
+
+    #searchWrapper::after {
+        position: absolute;
+        top: 7px;
+        right: 15px;
+    }
+
+/* contact us page */
+    #contactUsSection {
+        background: #fbedd7;
+    }
+
+/* dont remember where this is/was used??? */
+.gi-5x {
+    font-size: 5em;
+    color: #e26a6b
+}
+
+.gi-5x:hover {
+    font-size: 5em;
+    color: #eeaaab;
+}
