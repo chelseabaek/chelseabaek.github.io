@@ -1,0 +1,52 @@
+﻿<div id="contactUsSection" class="container-fluid justify-content-center">
+    <h2 style="color: #628837"; class="text-center">Contact Us</h2>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <p><span class="glyphicon glyphicon-phone"></span>&nbsp Phone: (123) 456-7890</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>&nbsp Email: aroundU@mail.com</p>
+            <br>
+            <br>
+        </div>
+        <div class="col-md-8">
+            <div class="row">
+                <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfCQ6UrYIeSNL6DxIAUDsY6o7MB_KyyZa2VBvf1qTPjFnyK9g/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" type="text" placeholder="First Name"  name="entry.1970827120" id="entry.1970827120" required><br>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" type="text" placeholder="Last Name" name="entry.269600070" id="entry.269600070" required><br>
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <textarea class="form-control" type="text" placeholder="Message" name="entry.436248435" id="entry.436248435" rows="8" required></textarea><br>
+
+                        <button id="submitButton"class="btn pull-right" type="submit">Send</button><br>
+                    </div>
+                </form>
+
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #submitButton {
+        background-color: #f9e0bb;
+    }
+
+    #submitButton:hover {
+        background-color: #fbe8cd;
+        color: white;
+    }
+</style>
+
+
+
+<script type="text/javascript">var submitted = false;</script>
+<script type="text/javascript">$('#gform').on('submit', function (e) {
+        $('#gform *').fadeOut(2000);
+        $('#gform').prepend('Thank you for contacting us! Your submission has been processed.');
+});
+</script>

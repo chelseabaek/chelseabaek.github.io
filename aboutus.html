@@ -1,1 +1,64 @@
+﻿<style>
+    .name, .position {
+        margin-bottom: -2px;
+    }
+</style>
 
+<div id="aboutUsSection">
+        <div class="container-fluid text-center justify-content-center">
+        <div class="row">            
+            <h2 style="color: #628837;">Our Story</h2>
+            <p style="padding: 0px 30px 0px 30px">We are a team of 4 University students working on a project as part of the "Spread Innovation Challenge" with the Queen's Innovation Centre Summer Initiative. Our focus is to create a solution to address the challenges of shopping at essential service stores during the COVID-19 pandemic.</p>
+            <br>           
+        </div>
+    </div>
+    <div class="container-fluid text-center justify-content-center"> 
+        <div class="row">
+            <h2 style="color: #628837;">The Team</h2>
+            <div id="wrapperMembers"></div>
+        </div>
+    </div>
+
+    <div id="footerReuse"></div>
+</div>
+
+<script>var members = {
+        "1": {
+            name: "Sophia Tan",
+            position: 'Project Management',
+        photo: 'headshots/spiderman.jpg',
+            linkedIn: 'http://www.linkedIn.com/'
+        },
+        "2": {
+            name: "Reem Elkateb",
+            position: 'Business',
+            photo: 'headshots/spiderman.jpg',
+            linkedIn: 'http://www.linkedIn.com/'
+        },
+        "3": {
+            name: "Nika Prairie",
+            position: 'Software & Hardware',
+            photo: 'headshots/spiderman.jpg',
+            linkedIn: 'http://www.linkedIn.com/'
+        },
+        "4": {
+            name: "Chelsea Baek",
+            position: 'Web Development',
+            photo: 'headshots/spiderman.jpg',
+            linkedIn: 'http://www.linkedIn.com/'
+        }
+    }
+
+
+    var wrapperMembers = $('#wrapperMembers'), container;
+
+    for (var key in members) {
+        container = $('<div id="membersID" class="col-sm-3"> </div>');
+        wrapperMembers.append(container);
+        container.append('<img src="' + members[key].photo + '"class="headshots" alt="' + members[key].name + '" width="75%"></div>');
+        container.append('<div><p class="name" style="color: #628837; font-size: 1.5em">' + members[key].name + '</p></div>');
+        container.append('<div"><p class="position" style="color: #7cac46; font-size: 1em">' + members[key].position + '</p></div>');
+        container.append('<a href=' + members[key].linkedIn + ' " target=\"_blank\" rel=\"noopener noreferrer\"><i class="fa fa-linkedin"></i></a><br>');
+        container.append('<br>\n');
+    }
+</script>
