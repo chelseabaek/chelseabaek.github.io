@@ -1,0 +1,58 @@
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    transition: opacity 1s; 
+} 
+
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 5.0em !important;
+}
+
+
+a {
+    color: black !important;
+    text-shadow: 0px 8px 30px gray;
+  }
+  
+a:hover {
+    color: black !important;
+    /* text-decoration: none !important; */
+}
+
+p {
+    font-size: 1.2em; /* 14px/16=0.875em */
+  }
+
+
+.container.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divider {
+    /* font-size: 30px; */
+    display: flex;
+    align-items: center;
+}
+
+.divider::before, .divider::after {
+    flex: 1;
+    content: '';
+    padding: 0.5px;
+    background-color: black;
+    margin: 4px;
+}
+
+.title {
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+}
+
+.card {
+    border:none !important;
+    padding: 6px;
+    flex: 0 0 33.333%;
+    display: flex;
+    margin-bottom: 22px;
+}

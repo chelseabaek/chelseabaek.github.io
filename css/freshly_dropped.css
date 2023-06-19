@@ -1,0 +1,232 @@
+body {
+    color: black !important;
+    background-color: white !important;
+    font-family: 'Roboto', sans-serif !important;
+    opacity: 0;
+    transition: opacity 1s;
+    /* padding: 18px 18px 18px 18px; */
+}
+
+/* text */
+
+p {
+  font-size: 1.1em; /* 14px/16=0.875em */
+}
+
+h1 {
+    color: #129575 !important;
+    font-style: normal !important;
+    font-family: 'Inter' !important;
+    font-weight: 1000 !important;
+}
+
+h2 {
+    color: #129575 !important;
+    font-style: normal !important;
+    font-family: 'Inter' !important;
+    font-weight: 1000 !important;
+    text-align: left;
+}
+
+h6 {
+    display: inline;
+    color: #FF9C00 !important;
+}
+
+a {
+  color: black !important;
+  text-shadow: 0px 8px 25px gray;
+}
+
+a:hover {
+    color: #FF9C00 !important;
+    /* text-decoration: none !important; */
+    
+  }
+
+.switch:hover {
+    font-size: 0;
+  }
+  
+.switch:hover:before {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif !important;
+    content: attr(data-hover);
+}
+
+.container {
+    text-align: justify;
+}
+
+.container.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divider {
+    /* font-size: 30px; */
+    display: flex;
+    align-items: center;
+  }
+
+  .divider::before, .divider::after {
+    flex: 1;
+    content: '';
+    padding: 0.5px;
+    background-color: black;
+    margin: 4px;
+  }
+
+/* slides */
+
+.title {
+    padding: 25px 0px 25px 0px;
+    /* background-color: #EDFDF9; */
+    text-align: center;
+}
+
+.introduction {
+    padding: 25px 0px 25px 0px;
+    text-align: justify;
+}
+
+.business-problem {
+    padding: 25px 0px 25px 0px;
+    text-align: justify;
+    background-color: #FEECED;
+}
+
+.kpi {
+    padding: 25px 0px 25px 0px;
+    text-align: justify;
+}
+
+.problem-statement {
+        padding: 25px 0px 25px 0px;
+    text-align: justify;
+    background-color: #EDFDF9;
+}
+
+
+/* sticky note */
+
+.sticky-note {
+    display: flex;
+    justify-content: center;
+}
+
+.sticky-note p { 
+    float:left; 
+    padding:25px 25px 40px;
+    margin:0 20px 20px 0;
+    width:250px;
+    height:250px; 
+    box-shadow: 0px 20px 10px grey;
+  }
+  
+.sticky-note p {
+    line-height:1.5;
+    border:0;
+    border-radius:3px;
+    background: linear-gradient(#F9EFAF, #F7E98D);
+    justify-content: center !important;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+.note {
+    font-family: 'Indie Flower', cursive;
+}
+
+/* cards */
+
+.card {
+    border: none !important;
+}
+
+.card .requirement {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: #129575;
+    padding: 65px 15px  !important;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.card .slide {
+    text-align: center !important;
+    width: 100%;
+    height: 200px;
+    transition: 0.4s;
+    
+}
+
+.container .card .slide.slide1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: .7s;
+    transform: translateY(100px);
+
+}
+
+.container .card:hover .slide.slide1{
+    transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .8s;
+    transform: translateY(-100px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.container .card:hover .slide.slide2{
+    transform: translateY(0);
+}
+
+.container .card .slide.slide2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: black;
+    font-size: 1.0em !important;
+}
+
+/* .container .card .slide.slide2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+}  */
+
+
+.lo-fi {
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    padding: 3px;
+}
+
+/* nav bar */

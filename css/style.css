@@ -1,0 +1,108 @@
+/* Home Page */
+body {
+    color: black !important;
+    background-color: #e0d7ea !important;
+    font-family: 'Poppins', sans-serif !important;
+    padding: 10px 25px 25px 10px;
+    background: rgba(255, 255, 255, 0.54);
+}
+
+h3 {
+    color: #38023B !important;
+    font-weight: bold !important;
+}
+
+p {
+    font-size: 1.1em; /* 14px/16=0.875em */
+  }
+
+/* nav */
+.navbar {
+    background-color: #e0d7ea !important; 
+    padding-bottom: 20px !important;
+    
+}
+
+.navbar.navbar-expand-lg a {
+    color: #38023B;
+}
+.navbar-nav.ml-auto li a {
+    color: black !important;
+}
+
+.navbar-toggler {
+    background-color: #38023B !important;
+    border-color: #38023B !important;
+}
+
+.navbar-toggler-icon {
+    background-color: #38023B !important;
+}
+
+@media (max-width: 768px){
+    .col-md-5 {
+        position: static !important;
+     }
+  }
+
+
+/* cards */
+.card {
+    color: black !important;
+    background-color: #E8E1EF !important;  
+}
+
+.card h5 {
+    font-weight: bold !important;
+}
+  
+.card:hover {
+      transition: all 0.2s ease-out;
+      box-shadow: 0px 0px 8px #38023B;
+      top: -2px;
+      /* border: 0.5px solid #d6cae2 !important; */
+      background-color: #e0d7ea !important;
+      color: #38023B !important;
+    }
+
+.card:hover p {
+        color: black !important;
+      }
+
+
+.intro {
+    
+    padding: 15px 15px 15px 15px;
+    background: #E8E1EF;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+}
+
+.about {
+    padding: 15px 15px 15px 15px;
+    background: #E8E1EF;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+}
+
+.comp-projects, .ux-projects {
+    padding: 15px 15px 15px 15px;
+    background: #E8E1EF;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+}
+
+.resume {
+    padding: 15px 15px 15px 15px;
+    background: #E8E1EF;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+}
