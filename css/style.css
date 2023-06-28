@@ -39,8 +39,9 @@ p {
     background-color: #38023B !important;
 }
 
-@media (max-width: 768px){
-    .col-md-5 {
+@media (max-width: 992px){
+    .col-lg-5 {
+        width: 100% !important;
         position: static !important;
      }
   }
