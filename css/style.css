@@ -39,7 +39,7 @@ p {
     background-color: #38023B !important;
 }
 
-@media (max-width: 1220px){
+@media (max-width: 1200px){
     .col-xl-5 {
         width: 100% !important;
         position: static !important;
